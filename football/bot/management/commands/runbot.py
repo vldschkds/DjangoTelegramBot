@@ -30,7 +30,7 @@ class Command(BaseCommand):
             reply_markup=InlineKeyboardMarkup.from_button(
                 InlineKeyboardButton(
                     text="Старт",
-                    web_app=WebAppInfo(url="https://1a11-89-151-179-105.ngrok-free.app"),
+                    web_app=WebAppInfo(url="https://4477-89-151-179-105.ngrok-free.app"),
                 )
             )
         )
