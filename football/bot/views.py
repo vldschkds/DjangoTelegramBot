@@ -47,5 +47,3 @@ def index(request):
 def league_table(request, league):
     table = get_table_results(league)
     return JsonResponse(table)
-
-print('test')
