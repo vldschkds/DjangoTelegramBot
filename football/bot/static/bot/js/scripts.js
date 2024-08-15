@@ -27,20 +27,26 @@ function fetchTable(league) {
 
             const tbody = document.createElement('tbody');
 
-            data.rows.forEach(row => {
+            for (let i = 0; i < data.rows.length; i++) {
                 const tr = document.createElement('tr');
-                row.forEach(cell => {
+                for (let k = 0; k < data.rows[i].length; k++) {
                     const td = document.createElement('td');
-                    td.appendChild(document.createTextNode(cell));
-//                    data.icons.forEach(icon => {
-//                        const a = document.createElement('a').href;
-//                        a.href = icon;
-//                        td.appendChild(a);
-//                    })
-                    tr.appendChild(td);
-                });
+                    if (k == 1){
+                        const img = document.createElement('img');
+                        img.src = data.icons[i];
+                        img.style.width = '35px';
+                        img.style.height = '35px';
+                        td.appendChild(img)
+                        td.appendChild(document.createTextNode(data.rows[i][k]));
+                        tr.appendChild(td);
+                    }
+                    else{
+                        td.appendChild(document.createTextNode(data.rows[i][k]));
+                        tr.appendChild(td);
+                    }
+                }
                 tbody.appendChild(tr);
-            });
+            };
 
             table.appendChild(tbody);
             tableContainer.appendChild(table);
