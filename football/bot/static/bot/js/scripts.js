@@ -34,7 +34,7 @@ function fetchTable(league) {
                     if (k == 1){
                         const img = document.createElement('img');
                         img.src = data.icons[i];
-                        img.style.width = '35px';
+                        img.style.width = '50px';
                         img.style.height = '35px';
                         td.appendChild(img)
                         td.appendChild(document.createTextNode(data.rows[i][k]));
