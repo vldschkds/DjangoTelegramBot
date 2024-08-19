@@ -67,3 +67,13 @@ th {
 #table-container.active {
     max-height: 1000px;
 }
+
+.head_theme {
+    background-image: url("https://www.premierleague.com/resources/rebrand/v7.151.1/i/elements/backgrounds/primary-bg.svg");
+    background-repeat: round;
+}
+
+#name1 {
+    color: white;
+    font-weight: bold;
+}

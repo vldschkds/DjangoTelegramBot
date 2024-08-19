@@ -8,14 +8,16 @@
 <!--    <link rel="stylesheet" type="text/css" href="{% static 'bot/css/responsive.css' %}"/>-->
 </head>
 <body>
-    <div class="name">
-        <h1>Top 5 Football Leagues</h1>
+    <div class="head_theme">
+        <div class="name">
+            <h1 id="name1">Top 5 Football Leagues</h1>
+        </div>
+        <ul>
+            {% for name, code in leagues %}
+                <li><a id="btn_league" href="javascript:void(0);" onclick="fetchTable('{{ code }}');">{{ name }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
-    <ul>
-        {% for name, code in leagues %}
-            <li><a id="btn_league" href="javascript:void(0);" onclick="fetchTable('{{ code }}');">{{ name }}</a></li>
-        {% endfor %}
-    </ul>
     <div id="table-container"></div>
     <script src="{% static 'bot/js/scripts.js' %}"></script>
 </body>
