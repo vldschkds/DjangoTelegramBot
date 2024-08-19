@@ -37,6 +37,12 @@ ul li a:hover {
     background-color: #006bb3;
 }
 
+ul li a:focus {
+    outline: 2px solid #0090f0;
+    outline-offset: 5px;
+    transition: 0.5s;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -51,4 +57,13 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+#table-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms;
+}
+#table-container.active {
+    max-height: 1000px;
 }

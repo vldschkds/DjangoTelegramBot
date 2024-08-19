@@ -51,7 +51,10 @@ function fetchTable(league) {
             table.appendChild(tbody);
             tableContainer.appendChild(table);
 
-            tableContainer.style.display = (tableContainer.style.display == "") ? "none" : "";
-
+            if (tableContainer.className === "") {
+                tableContainer.className = "active";
+            } else {
+                tableContainer.className = "";
+            }
         });
 }

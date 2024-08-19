@@ -13,10 +13,10 @@
     </div>
     <ul>
         {% for name, code in leagues %}
-        <li><a href="javascript:void(0);" onclick="fetchTable('{{ code }}');">{{ name }}</a></li>
+            <li><a id="btn_league" href="javascript:void(0);" onclick="fetchTable('{{ code }}');">{{ name }}</a></li>
         {% endfor %}
     </ul>
-    <div id="table-container" style="display: none;"></div>
+    <div id="table-container"></div>
     <script src="{% static 'bot/js/scripts.js' %}"></script>
 </body>
 </html>
