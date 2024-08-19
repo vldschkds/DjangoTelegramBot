@@ -4,17 +4,28 @@ body {
     padding: 20px;
 }
 
+table-container {
+    width: 100%;
+}
+
+.name {
+    padding: 20px;
+}
+
 h1 {
     text-align: center;
 }
 
 ul {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
 }
 
 ul li {
     margin: 10px 0;
+    padding: 10px;
 }
 
 ul li a {

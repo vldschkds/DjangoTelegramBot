@@ -7,7 +7,7 @@ function fetchTable(league) {
                 return;
             }
 
-            const tableContainer = document.getElementById('table-container');
+            let tableContainer = document.getElementById('table-container');
             tableContainer.innerHTML = '';
 
             const table = document.createElement('table');
@@ -50,6 +50,8 @@ function fetchTable(league) {
 
             table.appendChild(tbody);
             tableContainer.appendChild(table);
+
+            tableContainer.style.display = (tableContainer.style.display == "") ? "none" : "";
 
         });
 }
