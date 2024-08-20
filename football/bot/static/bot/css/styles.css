@@ -62,15 +62,37 @@ th {
 #table-container {
     max-height: 0;
     overflow: hidden;
+}
+
+#table-container.two {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#table-container.england {
+    max-height: 1400px;
     transition: max-height 1.5s;
-
-}
-#table-container.active {
-    max-height: 1400px;
 }
 
-#table-container.passive {
+#table-container.spain {
     max-height: 1400px;
+    transition: max-height 1.5s;
+}
+
+#table-container.italy {
+    max-height: 1400px;
+    transition: max-height 1.5s;
+}
+
+#table-container.germany {
+    max-height: 1400px;
+    transition: max-height 1.5s;
+}
+
+#table-container.france {
+    max-height: 1400px;
+    transition: max-height 1.5s;
 }
 
 .head_theme {

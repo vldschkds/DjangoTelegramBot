@@ -7,9 +7,8 @@ function fetchTable(league) {
                 return;
             }
 
-            let btnLeague = document.createElement('a');
 
-            let tableContainer = document.getElementById('table-container');
+            let tableContainer = document.getElementById(`table-container`);
             tableContainer.innerHTML = '';
 
             const table = document.createElement('table');
@@ -53,10 +52,19 @@ function fetchTable(league) {
             table.appendChild(tbody);
             tableContainer.appendChild(table);
 
-            if (tableContainer.className === "") {
-                tableContainer.className = "active";
-            } else if (tableContainer.className === "active") {
-                tableContainer.className = "";
+            function tableDef(){
+                if (tableContainer.className === "") {
+                    tableContainer.className = `${league}`;
+                } else if (tableContainer.className === `${league}`) {
+                    tableContainer.className = "two";
+                }
+                else {
+                    tableContainer.className = "";
+                    setTimeout(() => { tableContainer.className = `${league}`; }, 250);
+                }
             }
+
+            tableDef();
+
         });
 }
