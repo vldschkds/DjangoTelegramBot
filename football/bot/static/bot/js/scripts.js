@@ -7,6 +7,8 @@ function fetchTable(league) {
                 return;
             }
 
+            let btnLeague = document.createElement('a');
+
             let tableContainer = document.getElementById('table-container');
             tableContainer.innerHTML = '';
 
@@ -53,7 +55,7 @@ function fetchTable(league) {
 
             if (tableContainer.className === "") {
                 tableContainer.className = "active";
-            } else {
+            } else if (tableContainer.className === "active") {
                 tableContainer.className = "";
             }
         });

@@ -14,7 +14,7 @@
         </div>
         <ul>
             {% for name, code in leagues %}
-                <li><a id="btn_league" href="javascript:void(0);" onclick="fetchTable('{{ code }}');">{{ name }}</a></li>
+                <li><a id="btn_league_{{ code }}" href="javascript:void(0);" onclick="fetchTable('{{ code }}');">{{ name }}</a></li>
             {% endfor %}
         </ul>
     </div>

@@ -62,14 +62,19 @@ th {
 #table-container {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 500ms;
+    transition: max-height 1.5s;
+
 }
 #table-container.active {
-    max-height: 1000px;
+    max-height: 1400px;
+}
+
+#table-container.passive {
+    max-height: 1400px;
 }
 
 .head_theme {
-    background-image: url("https://www.premierleague.com/resources/rebrand/v7.151.1/i/elements/backgrounds/primary-bg.svg");
+    background-image: url("../img/head_theme.png");
     background-repeat: round;
 }
 
