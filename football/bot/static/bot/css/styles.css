@@ -104,3 +104,27 @@ th {
     color: white;
     font-weight: bold;
 }
+
+.af_blue_1 {
+    background-color: rgba(81, 121, 255, 0.5);
+}
+
+.af_blue_2 {
+    background-color: rgba(0, 46, 201, 0.5);
+}
+
+.af_yellow {
+    background-color: rgba(235, 245, 33, 0.5);
+}
+
+.af_green {
+    background-color: rgba(68, 217, 56, 0.5);
+}
+
+.af_pink {
+    background-color: rgba(105, 48, 48, 0.5);
+}
+
+.af_red {
+    background-color: rgba(249, 14, 14, 0.5);
+}
