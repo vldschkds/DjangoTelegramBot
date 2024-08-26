@@ -66,5 +66,73 @@ function fetchTable(league) {
 
             tableDef();
 
+
+            setTimeout(() => {
+                if (["england", "spain", "italy", "germany"].includes(tableContainer.className)) {
+                    const tbody_all =  document.querySelector('#table-container tbody');
+                    const trElements = tbody_all.querySelectorAll('tr');
+                    for (let i = 0; i < trElements.length; i++) {
+                        if ([0, 1, 2, 3].includes(i)) {
+                            trElements[i].className = 'af_blue_1';
+                        }
+                        else if (i === 4) {
+                            trElements[i].className = 'af_yellow';
+                        }
+                    }
+                }
+                if (tableContainer.className === "england") {
+                    const tbody_en =  document.querySelector('#table-container tbody');
+                    const trElements = tbody_en.querySelectorAll('tr');
+                    for (let i = 17; i < trElements.length; i++) {
+                        trElements[i].className = 'af_red';
+                    }
+                }
+                if (tableContainer.className === "spain") {
+                    const tbody_sp =  document.querySelector('#table-container tbody');
+                    const trElements = tbody_sp.querySelectorAll('tr');
+                    trElements[5].className = 'af_green';
+                    for (let i = 17; i < trElements.length; i++) {
+                        trElements[i].className = 'af_red';
+                    }
+                }
+                if (tableContainer.className === "italy") {
+                    const tbody_it =  document.querySelector('#table-container tbody');
+                    const trElements = tbody_it.querySelectorAll('tr');
+                    trElements[5].className = 'af_green';
+                    for (let i = 17; i < trElements.length; i++) {
+                        trElements[i].className = 'af_red';
+                    }
+                }
+                if (tableContainer.className === "germany") {
+                    const tbody_ger =  document.querySelector('#table-container tbody');
+                    const trElements = tbody_ger.querySelectorAll('tr');
+                    trElements[5].className = 'af_green';
+                    trElements[15].className = 'af_pink';
+                    trElements[16].className = 'af_red';
+                    trElements[17].className = 'af_red';
+                }
+                if (tableContainer.className === "france") {
+                    const tbody_fr =  document.querySelector('#table-container tbody');
+                    const trElements = tbody_fr.querySelectorAll('tr');
+                    for (let i = 0; i < trElements.length; i++) {
+                        if ([0, 1, 2].includes(i)) {
+                            trElements[i].className = 'af_blue_1';
+                        }
+                        else if (i == 3) {
+                            trElements[i].className = 'af_blue_2';
+                        }
+                        else if (i === 4) {
+                            trElements[i].className = 'af_yellow';
+                        }
+                    }
+                    trElements[5].className = 'af_green';
+                    trElements[15].className = 'af_pink';
+                    trElements[16].className = 'af_red';
+                    trElements[17].className = 'af_red';
+                }
+
+            }, 250);
+
+
         });
 }
