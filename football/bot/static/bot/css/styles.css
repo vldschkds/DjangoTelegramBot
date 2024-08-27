@@ -139,9 +139,10 @@ th {
     height: 50px;
 }
 
+/* Лига Чемпионов */
+
 .champions_league {
     position: relative;
-    left: 15px;
     height: 30px;
     width: 130px;
 }
@@ -161,6 +162,123 @@ th {
     width: 130px;
     font-size:13px;
 }
+
+.ul_legend {
+    position: relative;
+    bottom: 13px;
+}
+
+/* Лига Чемпионов (Квалификация) */
+.qual_league {
+    height: 30px;
+    width: 222px;
+}
+
+.qual_color {
+    position: relative;
+    top: 15px;
+    background-color: rgba(0, 46, 201, 0.5);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.qual_name {
+    position: relative;
+    left: 15px;
+    width: 210px;
+    font-size:13px;
+}
+
+/* Лига Европы */
+.europe_league {
+    height: 30px;
+    width: 107px;
+}
+
+.europe_color {
+    position: relative;
+    top: 15px;
+    background-color: rgba(235, 245, 33, 0.5);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.europe_name {
+    position: relative;
+    left: 15px;
+    width: 130px;
+    font-size:13px;
+}
+
+/* Лига Конференций */
+.conference_league {
+    height: 30px;
+    width: 237px;
+}
+
+.conference_color {
+    position: relative;
+    top: 15px;
+    background-color: rgba(68, 217, 56, 0.5);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.conference_name {
+    position: relative;
+    left: 15px;
+    width: 222px;
+    font-size:13px;
+}
+
+/* Понижение Лиги */
+.relegation_league {
+    height: 30px;
+    width: 130px;;
+}
+
+.relegation_color {
+    position: relative;
+    top: 15px;
+    background-color: rgba(249, 14, 14, 0.5);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.relegation_name {
+    position: relative;
+    left: 15px;
+    width: 110px;
+    font-size:13px;
+}
+
+/* Понижение Лиги(Квалификация) */
+.requal_league {
+    height: 30px;
+    width: 130px;;
+}
+
+.requal_color {
+    position: relative;
+    top: 15px;
+    background-color: rgba(105, 48, 48, 0.5);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.requal_name {
+    position: relative;
+    left: 15px;
+    width: 210px;
+    font-size:13px;
+}
+
+/* Table Foot */
 
 .table_foot {
     background-image: url("../img/head_theme.png");

@@ -52,15 +52,18 @@ function fetchTable(league) {
             table.appendChild(tbody);
             tableContainer.appendChild(table);
 
+            // Легенда
             const table_legend = document.createElement('div');
             table_legend.className = 'table_legend';
 
+            const ul = document.createElement('ul');
+            ul.className = 'ul_legend';
+
             // Лига Чемпионов
-            const champions_league = document.createElement('div');
+            const champions_league = document.createElement('li');
             const champions_color = document.createElement('div');
             const champions_name = document.createElement('div');
-            champions_name.innerHTML += 'Champions League'
-
+            champions_name.innerHTML += 'Лига Чемпионов';
 
             champions_league.className = 'champions_league';
             champions_color.className = 'champions_color';
@@ -69,7 +72,88 @@ function fetchTable(league) {
             champions_league.appendChild(champions_color);
             champions_league.appendChild(champions_name);
 
-            table_legend.append(champions_league);
+            ul.appendChild(champions_league);
+
+            // Лига Чемпионов (Квалификация)
+            const qual_league = document.createElement('li');
+            const qual_color = document.createElement('div');
+            const qual_name = document.createElement('div');
+            qual_name.innerHTML += 'Лига Чемпионов(Квалификация)';
+
+            qual_league.className = 'qual_league';
+            qual_color.className = 'qual_color';
+            qual_name.className = 'qual_name';
+
+            qual_league.appendChild(qual_color);
+            qual_league.appendChild(qual_name);
+
+            ul.appendChild(qual_league);
+
+
+            //Лига Европы
+            const europe_league = document.createElement('li');
+            const europe_color = document.createElement('div');
+            const europe_name = document.createElement('div');
+            europe_name.innerHTML += 'Лига Европы';
+
+            europe_league.className = 'europe_league';
+            europe_color.className = 'europe_color';
+            europe_name.className = 'europe_name';
+
+            europe_league.appendChild(europe_color);
+            europe_league.appendChild(europe_name);
+
+            ul.appendChild(europe_league);
+
+            //Лига Конференций
+            const conference_league = document.createElement('li');
+            const conference_color = document.createElement('div');
+            const conference_name = document.createElement('div');
+            conference_name.innerHTML += 'Лига Конференций(Квалификация)';
+
+            conference_league.className = 'conference_league';
+            conference_color.className = 'conference_color';
+            conference_name.className = 'conference_name';
+
+            conference_league.appendChild(conference_color);
+            conference_league.appendChild(conference_name);
+
+            ul.appendChild(conference_league);
+
+            //Понижение Лиги
+            const relegation_league = document.createElement('li');
+            const relegation_color = document.createElement('div');
+            const relegation_name = document.createElement('div');
+            relegation_name.innerHTML += 'Понижение Лиги';
+
+            relegation_league.className = 'relegation_league';
+            relegation_color.className = 'relegation_color';
+            relegation_name.className = 'relegation_name';
+
+            relegation_league.appendChild(relegation_color);
+            relegation_league.appendChild(relegation_name);
+
+            ul.appendChild(relegation_league);
+
+            //Понижение Лиги(Квалификация)
+            const requal_league = document.createElement('li');
+            const requal_color = document.createElement('div');
+            const requal_name = document.createElement('div');
+            requal_name.innerHTML += 'Понижение Лиги(Квалификация)';
+
+            requal_league.className = 'requal_league';
+            requal_color.className = 'requal_color';
+            requal_name.className = 'requal_name';
+
+            requal_league.appendChild(requal_color);
+            requal_league.appendChild(requal_name);
+
+            ul.appendChild(requal_league);
+
+            //Добавление Ul
+            table_legend.appendChild(ul);
+
+            //Table Foot
 
             const table_foot = document.createElement('div');
             table_foot.className = 'table_foot';
