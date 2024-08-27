@@ -52,6 +52,38 @@ function fetchTable(league) {
             table.appendChild(tbody);
             tableContainer.appendChild(table);
 
+            const table_legend = document.createElement('div');
+            table_legend.className = 'table_legend';
+
+            // Лига Чемпионов
+            const champions_league = document.createElement('div');
+            const champions_color = document.createElement('div');
+            const champions_name = document.createElement('div');
+            champions_name.innerHTML += 'Champions League'
+
+
+            champions_league.className = 'champions_league';
+            champions_color.className = 'champions_color';
+            champions_name.className = 'champions_name';
+
+            champions_league.appendChild(champions_color);
+            champions_league.appendChild(champions_name);
+
+            table_legend.append(champions_league);
+
+            const table_foot = document.createElement('div');
+            table_foot.className = 'table_foot';
+
+            const author_name = document.createElement('div');
+            author_name.className = 'author_name';
+            author_name.innerHTML += '© vldschkds'
+            table_foot.appendChild(author_name);
+
+            tableContainer.appendChild(table_legend);
+            tableContainer.appendChild(table_foot);
+
+            // Логика открытия
+
             function tableDef(){
                 if (tableContainer.className === "") {
                     tableContainer.className = `${league}`;
@@ -132,7 +164,6 @@ function fetchTable(league) {
                 }
 
             }, 250);
-
 
         });
 }

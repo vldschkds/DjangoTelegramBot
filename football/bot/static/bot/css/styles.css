@@ -128,3 +128,52 @@ th {
 .af_red {
     background-color: rgba(249, 14, 14, 0.5);
 }
+
+/* Информация по цветам */
+
+.table_legend {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ddd;
+    width: 100%;
+    height: 50px;
+}
+
+.champions_league {
+    position: relative;
+    left: 15px;
+    height: 30px;
+    width: 130px;
+}
+
+.champions_color {
+    position: relative;
+    top: 15px;
+    background-color: rgba(81, 121, 255, 0.5);
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.champions_name {
+    position: relative;
+    left: 15px;
+    width: 130px;
+    font-size:13px;
+}
+
+.table_foot {
+    background-image: url("../img/head_theme.png");
+    background-repeat: round;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.author_name {
+    position: relative;
+    color: white;
+    width: 90px;
+    left: 1900px;
+    top: 25px;
+}
