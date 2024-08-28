@@ -120,21 +120,6 @@ function fetchTable(league) {
 
             ul.appendChild(conference_league);
 
-            //Понижение Лиги
-            const relegation_league = document.createElement('li');
-            const relegation_color = document.createElement('div');
-            const relegation_name = document.createElement('div');
-            relegation_name.innerHTML += 'Понижение Лиги';
-
-            relegation_league.className = 'relegation_league';
-            relegation_color.className = 'relegation_color';
-            relegation_name.className = 'relegation_name';
-
-            relegation_league.appendChild(relegation_color);
-            relegation_league.appendChild(relegation_name);
-
-            ul.appendChild(relegation_league);
-
             //Понижение Лиги(Квалификация)
             const requal_league = document.createElement('li');
             const requal_color = document.createElement('div');
@@ -149,6 +134,21 @@ function fetchTable(league) {
             requal_league.appendChild(requal_name);
 
             ul.appendChild(requal_league);
+
+            //Понижение Лиги
+            const relegation_league = document.createElement('li');
+            const relegation_color = document.createElement('div');
+            const relegation_name = document.createElement('div');
+            relegation_name.innerHTML += 'Понижение Лиги';
+
+            relegation_league.className = 'relegation_league';
+            relegation_color.className = 'relegation_color';
+            relegation_name.className = 'relegation_name';
+
+            relegation_league.appendChild(relegation_color);
+            relegation_league.appendChild(relegation_name);
+
+            ul.appendChild(relegation_league);
 
             //Добавление Ul
             table_legend.appendChild(ul);

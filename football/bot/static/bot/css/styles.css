@@ -4,6 +4,18 @@ body {
     padding: 20px;
 }
 
+#table-container {
+    background-color: white;
+}
+
+#lch {
+    position: relative;
+    top: 30px;
+    background-color: #1c61c1;
+    width: 10px;
+    height: 30px;
+}
+
 .name {
     padding: 20px;
 }
@@ -106,27 +118,34 @@ th {
 }
 
 .af_blue_1 {
-    background-color: rgba(81, 121, 255, 0.5);
+    color: white;
+    background: linear-gradient(to right, #0a0c29, #1b1f54, #1c61c1, #5930a5, #0a0c29);
 }
 
 .af_blue_2 {
-    background-color: rgba(0, 46, 201, 0.5);
+    color: white;
+    background: linear-gradient(to right, #1c2051, #545ab5, #5d9df7, #8760cf, #0a0c29);
 }
 
 .af_yellow {
-    background-color: rgba(235, 245, 33, 0.5);
+    color: white;
+    background: linear-gradient(to right, #29230a, #6f5720, #b7c11c, #a59730, #0a0c29);
+    /* background: linear-gradient(to right, #3b2504, #e3b11a, #e5d118, #f57f17, #000000); */
 }
 
 .af_green {
-    background-color: rgba(68, 217, 56, 0.5);
+    color: white;
+    background: linear-gradient(to right, #11290a, #23541b, #1cc138, #30a53e, #0a0c29);
 }
 
 .af_pink {
-    background-color: rgba(105, 48, 48, 0.5);
+    color: white;
+    background: linear-gradient(to right, #290a0a, #541b1b, #c11c59, #a5305b, #0a0c29);
 }
 
 .af_red {
-    background-color: rgba(249, 14, 14, 0.5);
+    color: white;
+    background: linear-gradient(to right, #290a0a, #541b1b, #c11c1c, #a53030, #0a0c29);
 }
 
 /* Информация по цветам */
@@ -150,7 +169,7 @@ th {
 .champions_color {
     position: relative;
     top: 15px;
-    background-color: rgba(81, 121, 255, 0.5);
+    background-color: #1c61c1;
     height: 10px;
     width: 10px;
     border-radius: 5px;
@@ -177,7 +196,7 @@ th {
 .qual_color {
     position: relative;
     top: 15px;
-    background-color: rgba(0, 46, 201, 0.5);
+    background-color: #5d9df7;
     height: 10px;
     width: 10px;
     border-radius: 5px;
@@ -199,7 +218,7 @@ th {
 .europe_color {
     position: relative;
     top: 15px;
-    background-color: rgba(235, 245, 33, 0.5);
+    background-color: #b7c11c;
     height: 10px;
     width: 10px;
     border-radius: 5px;
@@ -221,7 +240,7 @@ th {
 .conference_color {
     position: relative;
     top: 15px;
-    background-color: rgba(68, 217, 56, 0.5);
+    background-color: #1cc138;
     height: 10px;
     width: 10px;
     border-radius: 5px;
@@ -236,6 +255,8 @@ th {
 
 /* Понижение Лиги */
 .relegation_league {
+    position: relative;
+    left: 92px;
     height: 30px;
     width: 130px;;
 }
@@ -243,7 +264,7 @@ th {
 .relegation_color {
     position: relative;
     top: 15px;
-    background-color: rgba(249, 14, 14, 0.5);
+    background-color: #c11c1c;
     height: 10px;
     width: 10px;
     border-radius: 5px;
@@ -265,7 +286,7 @@ th {
 .requal_color {
     position: relative;
     top: 15px;
-    background-color: rgba(105, 48, 48, 0.5);
+    background-color: #ff2e91;
     height: 10px;
     width: 10px;
     border-radius: 5px;
