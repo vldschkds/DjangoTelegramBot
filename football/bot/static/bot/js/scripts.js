@@ -34,11 +34,15 @@ function fetchTable(league) {
                     const td = document.createElement('td');
                     if (k == 1){
                         const img = document.createElement('img');
+                        const div = document.createElement('div');
+                        div.className = 'name_team';
                         img.src = data.icons[i];
                         img.style.width = '50px';
                         img.style.height = '35px';
+
                         td.appendChild(img)
-                        td.appendChild(document.createTextNode(data.rows[i][k]));
+                        td.appendChild(document.createTextNode(data.rows[i][k]))
+
                         tr.appendChild(td);
                     }
                     else{
