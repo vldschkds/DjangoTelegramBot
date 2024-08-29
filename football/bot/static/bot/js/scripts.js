@@ -1,3 +1,4 @@
+
 function changeButton(mediaQuery) {
     if (mediaQuery.matches) {
         document.querySelector(`#btn_league_england`).innerHTML = 'EPL';
@@ -8,7 +9,7 @@ function changeButton(mediaQuery) {
     }
 }
 
-const mediaQuery = window.matchMedia('(max-width: 600px)');
+const mediaQuery = window.matchMedia('(max-width: 581px)');
 
 changeButton(mediaQuery);
 

@@ -11,6 +11,7 @@
         height: 50px;
         display: flex;
         align-items: center;
+        padding: 10px;
     }
 
 .af_blue_1 {
@@ -24,7 +25,7 @@
         display: flex;
         align-items: center;
         text-align: center;
-        font-weight: 10px;
+        padding: 10px;
     }
     .af_blue_1 {
         background-repeat: round;
@@ -37,6 +38,7 @@
         display: flex;
         align-items: center;
         text-align: center;
+        padding: 10px;
     }
     .af_blue_1 {
          background-repeat: round;
