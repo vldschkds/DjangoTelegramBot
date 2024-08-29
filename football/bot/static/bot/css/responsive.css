@@ -1,3 +1,5 @@
+/* height 877 */
+
 .container {
     max-width: 100%;
     margin: 0px auto;
@@ -10,12 +12,11 @@
         display: flex;
         align-items: center;
     }
+
 .af_blue_1 {
         background-repeat: round;
     }
 }
-
-
 
 @media (max-width: 665px) {
     ul li a {
