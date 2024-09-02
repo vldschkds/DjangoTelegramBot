@@ -1,19 +1,3 @@
-
-function changeButton(mediaQuery) {
-    if (mediaQuery.matches) {
-        document.querySelector(`#btn_league_england`).innerHTML = 'EPL';
-        document.querySelector(`#btn_league_spain`).innerHTML = 'LAL';
-        document.querySelector(`#btn_league_italy`).innerHTML = 'SA';
-        document.querySelector(`#btn_league_germany`).innerHTML = 'BUN';
-        document.querySelector(`#btn_league_france`).innerHTML = 'L1';
-    }
-}
-
-const mediaQuery = window.matchMedia('(max-width: 581px)');
-
-changeButton(mediaQuery);
-
-
 function fetchTable(league) {
     fetch(`/league/${league}/`)
         .then(response => response.json())
@@ -22,24 +6,6 @@ function fetchTable(league) {
                 alert(data.error);
                 return;
             }
-
-//            function checkName() {
-//                if (league === 'england') {
-//                    document.querySelector(`#btn_league_${league}`).innerHTML = 'EPL';
-//                }
-//                else if (league === 'spain') {
-//                    document.querySelector(`#btn_league_${league}`).innerHTML = 'LAL';
-//                }
-//                else if (league === 'italy') {
-//                    document.querySelector(`#btn_league_${league}`).innerHTML = 'SA';
-//                }
-//                else if (league === 'germany') {
-//                    document.querySelector(`#btn_league_${league}`).innerHTML = 'BUN';
-//                }
-//                else if (league === 'france') {
-//                    document.querySelector(`#btn_league_${league}`).innerHTML = 'L1';
-//                }
-//            }
 
             let tableContainer = document.getElementById(`table-container`);
             tableContainer.innerHTML = '';

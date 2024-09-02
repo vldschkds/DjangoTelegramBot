@@ -1,4 +1,6 @@
-/* height 877 */
+/* height 877
+font-size: small;
+*/
 
 .container {
     max-width: 100%;
@@ -7,46 +9,60 @@
 }
 
 @media (max-width: 700px) {
-    ul li a {
-        height: 50px;
-        display: flex;
-        align-items: center;
-        padding: 10px;
+    #name1 {
+        font-size: 23px;
     }
-
-.af_blue_1 {
-        background-repeat: round;
+    .head_theme {
+        height: 160px;
     }
-}
-
-@media (max-width: 665px) {
     ul li a {
+        position: relative;
+        bottom: 20px;
         height: 50px;
         display: flex;
         align-items: center;
         text-align: center;
-        padding: 10px;
+        padding: 3px;
     }
-    .af_blue_1 {
-        background-repeat: round;
+    ul li {
+        font-size: 14px;
     }
-}
 
-@media (max-width: 560px) {
-    ul li a {
-        height: 50px;
+    .ul_legend{
         display: flex;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    .af_blue_1 {
-         background-repeat: round;
+    .ul_legend li{
+        margin: 6px 0;
+        height: 20px;
     }
+    .table_legend {
+        height: 150px;
+    }
+
 }
 
 @media (min-width: 701px) {
+    #name1 {
+        font-size: 23px;
+    }
+
+    .head_theme {
+        height: 160px;
+    }
+
     ul li a {
         padding: 10px 15px;
+    }
+    ul li {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-height: 877px) {
+    #table-container {
+        font-size: 13px;
     }
 }

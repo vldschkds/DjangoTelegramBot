@@ -76,7 +76,7 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #d9d8d9;
 }
 
 #table-container {
@@ -132,6 +132,10 @@ th {
     background: linear-gradient(to right, #0a0c29, #1b1f54, #1c61c1, #5930a5, #0a0c29);
 }
 
+.af_blue_1 td {
+    background-clip: padding-box;
+}
+
 .af_blue_2 {
     color: white;
     background: linear-gradient(to right, #1c2051, #545ab5, #5d9df7, #8760cf, #0a0c29);
@@ -140,7 +144,6 @@ th {
 .af_yellow {
     color: white;
     background: linear-gradient(to right, #29230a, #6f5720, #b7c11c, #a59730, #0a0c29);
-    /* background: linear-gradient(to right, #3b2504, #e3b11a, #e5d118, #f57f17, #000000); */
 }
 
 .af_green {
@@ -323,6 +326,4 @@ th {
     position: relative;
     color: white;
     width: 90px;
-    left: 1900px;
-    top: 25px;
 }
